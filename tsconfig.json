@@ -12,6 +12,8 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
+    "baseUrl": ".",
+    /*允许引入js文件*/
     "allowJs": true,
     "paths": {
       "@/*": ["src/*"]
