@@ -1,6 +1,6 @@
-import { PluginOption } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { unocssPlugin } from './unocss'
+import type { PluginOption } from 'vite'
 
 export function createVitePlugins(): PluginOption[] {
   return [

@@ -1,5 +1,5 @@
 import Unocss from 'unocss/vite'
-import { presetAttributify, presetUno, presetIcons } from 'unocss'
+import { presetAttributify, presetIcons, presetUno } from 'unocss'
 
 export function unocssPlugin() {
   return Unocss({
