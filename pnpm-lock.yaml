@@ -5,6 +5,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.47.0
   '@typescript-eslint/parser': ^5.47.0
   '@vitejs/plugin-vue': ^4.0.0
+  '@vue/tsconfig': ^0.1.3
   eslint: ^8.30.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-eslint-comments: ^3.2.0
@@ -30,6 +31,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.47.0_ncmi6noazr3nzas7jxykisekym
   '@typescript-eslint/parser': registry.npmmirror.com/@typescript-eslint/parser/5.47.0_lzzuuodtsqwxnvqeq4g4likcqa
   '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/4.0.0_vite@4.0.3+vue@3.2.41
+  '@vue/tsconfig': registry.npmmirror.com/@vue/tsconfig/0.1.3_@types+node@18.11.17
   eslint: registry.npmmirror.com/eslint/8.30.0
   eslint-config-prettier: registry.npmmirror.com/eslint-config-prettier/8.5.0_eslint@8.30.0
   eslint-plugin-eslint-comments: registry.npmmirror.com/eslint-plugin-eslint-comments/3.2.0_eslint@8.30.0
@@ -1164,6 +1166,20 @@ packages:
     resolution: {integrity: sha512-Ewzq5Yhimg7pSztDV+RH1UDKBzmtqieXQlpTVm2AwraoRL/Rks96mvd8Vgi7Lj+h+TH8dv7mXD3FRZR3TUvbSg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/shared/-/shared-3.2.45.tgz}
     name: '@vue/shared'
     version: 3.2.45
+    dev: true
+
+  registry.npmmirror.com/@vue/tsconfig/0.1.3_@types+node@18.11.17:
+    resolution: {integrity: sha512-kQVsh8yyWPvHpb8gIc9l/HIDiiVUy1amynLNpCy8p+FoCiZXCo6fQos5/097MmnNZc9AtseDsCrfkhqCrJ8Olg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/tsconfig/-/tsconfig-0.1.3.tgz}
+    id: registry.npmmirror.com/@vue/tsconfig/0.1.3
+    name: '@vue/tsconfig'
+    version: 0.1.3
+    peerDependencies:
+      '@types/node': '*'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+    dependencies:
+      '@types/node': registry.npmmirror.com/@types/node/18.11.17
     dev: true
 
   registry.npmmirror.com/acorn-jsx/5.3.2_acorn@8.8.1:
