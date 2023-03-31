@@ -11,3 +11,5 @@
 ### 4.使用 sass
 
 ### 5.配置 eslint，使用的element-plus的[配置](https://github.com/element-plus/element-plus/blob/dev/internal/eslint-config/index.js)
+
+### 6.添加pinia作为状态管理工具
