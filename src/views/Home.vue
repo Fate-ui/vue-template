@@ -1,7 +1,6 @@
-<script setup lang="ts"></script>
-
+<script lang="ts" setup></script>
 <template>
-  <RouterView />
+  <div>Home</div>
 </template>
 
 <style scoped lang="scss"></style>

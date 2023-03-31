@@ -22,11 +22,13 @@ specifiers:
   unocss: ^0.50.6
   vite: ^4.2.1
   vue: ^3.2.47
+  vue-router: '4'
   vue-tsc: ^1.2.0
 
 dependencies:
   pinia: registry.npmmirror.com/pinia/2.0.33_dtiidk7kpxlb6f6tlcun7ghfqm
   vue: registry.npmmirror.com/vue/3.2.47
+  vue-router: registry.npmmirror.com/vue-router/4.1.6_vue@3.2.47
 
 devDependencies:
   '@types/node': registry.npmmirror.com/@types/node/18.15.11
@@ -3877,6 +3879,18 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  registry.npmmirror.com/vue-router/4.1.6_vue@3.2.47:
+    resolution: {integrity: sha512-DYWYwsG6xNPmLq/FmZn8Ip+qrhFEzA14EI12MsMgVxvHFDYvlr4NXpVF5hrRH1wVcDP8fGi5F4rxuJSl8/r+EQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-router/-/vue-router-4.1.6.tgz}
+    id: registry.npmmirror.com/vue-router/4.1.6
+    name: vue-router
+    version: 4.1.6
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': registry.npmmirror.com/@vue/devtools-api/6.5.0
+      vue: registry.npmmirror.com/vue/3.2.47
+    dev: false
 
   registry.npmmirror.com/vue-template-compiler/2.7.14:
     resolution: {integrity: sha512-zyA5Y3ArvVG0NacJDkkzJuPQDF8RFeRlzV2vLeSnhSpieO6LK2OVbdLPi5MPPs09Ii+gMO8nY4S3iKQxBxDmWQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-template-compiler/-/vue-template-compiler-2.7.14.tgz}
