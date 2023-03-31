@@ -12,6 +12,7 @@
     "lint:fix": "pnpm run lint --fix"
   },
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "pinia": "^2.0.33",
     "vue": "^3.2.47",
     "vue-router": "4"
@@ -32,6 +33,7 @@
     "eslint-plugin-unicorn": "^46.0.0",
     "eslint-plugin-vue": "^9.10.0",
     "prettier": "^2.8.7",
+    "rollup-plugin-visualizer": "^5.9.0",
     "sass": "^1.60.0",
     "typescript": "^5.0.3",
     "unocss": "^0.50.6",
