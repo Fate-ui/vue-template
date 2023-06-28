@@ -1,10 +1,10 @@
 # 快速创建 Vue + Typescript + Vite 项目的模板
 
-## 该模板内置了以下插件
+## 该模板内置了以下内容和插件
 
-### 1.prettier (代码格式工具)
+### 1.配置prettier作为代码格式工具
 
-### 2.[unocss](https://github.com/unocss/unocss) (原子化 CSS)
+### 2.添加[unocss](https://github.com/unocss/unocss) (原子化 CSS)
 
 ### 3.使用 pnpm 作为包管理工具
 

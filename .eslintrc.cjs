@@ -32,7 +32,20 @@ module.exports = {
     {
       files: ['*.ts', '*.vue'],
       rules: {
-        'no-undef': 'off'
+        'no-undef': 'off',
+        // 不允许有未使用的变量
+        '@typescript-eslint/no-unused-vars': 'off',
+        // 不允许有console.log()
+        'no-console': 'off',
+        // 不允许直接禁用eslint
+        'eslint-comments/no-unlimited-disable': 'off',
+        'unicorn/prefer-query-selector': 'off',
+        // switch case里不能声明变量
+        'no-case-declarations': 'off',
+        // 不允许函数为空
+        '@typescript-eslint/no-empty-function': 'off',
+        // 只允许驼峰命名，不允许下划线命名
+        camelcase: 'off'
       }
     },
     {
@@ -122,7 +135,21 @@ module.exports = {
         }
       },
       rules: {
-        'no-undef': 'off'
+        'no-undef': 'off',
+        //不能改变props的值
+        'vue/no-mutating-props': 'off',
+        // v-if和v-for不能同时使用
+        'vue/no-use-v-if-with-v-for': 'off',
+        // 不能解构props的值
+        'vue/no-setup-props-destructure': 'off',
+        'vue/no-template-shadow': 'off',
+        'vue/no-lone-template': 'off',
+        // props必须定义类型
+        'vue/require-prop-types': 'off',
+        // 事件名必须通过短横线连接
+        'vue/v-on-event-hyphenation': 'off',
+        'vue/valid-attribute-name': 'off',
+        'vue/no-ref-as-operand': 'off'
       }
     },
 
@@ -138,6 +165,8 @@ module.exports = {
   rules: {
     // js/ts
     camelcase: ['error', { properties: 'never' }],
+    // 在块级语句（函数、{ }, if (a) { }, and while (a) { }）后添加空行
+    'padding-line-between-statements': ['error', { blankLine: 'always', prev: 'block-like', next: '*' }],
     'no-console': ['warn', { allow: ['error'] }],
     'no-debugger': 'warn',
     'no-constant-condition': ['error', { checkLoops: false }],
@@ -205,6 +234,29 @@ module.exports = {
         math: 'always'
       }
     ],
+    // 控制vue文件中script标、template标签、template标签的顺序
+    'vue/component-tags-order': [
+      'error',
+      {
+        order: ['script', 'template', 'style']
+      }
+    ],
+    'vue/html-closing-bracket-newline': [
+      'error',
+      {
+        singleline: 'never',
+        multiline: 'always'
+      }
+    ],
+    // 多行元素的内容之前和之后都需要换行符
+    'vue/multiline-html-element-content-newline': [
+      'error',
+      {
+        ignoreWhenEmpty: true,
+        ignores: ['pre', 'textarea'],
+        allowEmptyLines: false
+      }
+    ],
 
     // prettier
     'prettier/prettier': 'error',
@@ -262,7 +314,7 @@ module.exports = {
     'unicorn/no-new-array': 'error',
     'unicorn/no-new-buffer': 'error',
     'unicorn/no-unsafe-regex': 'off',
-    'unicorn/number-literal-case': 'error',
+    'unicorn/number-literal-case': 'off',
     'unicorn/prefer-array-find': 'error',
     'unicorn/prefer-array-flat-map': 'error',
     'unicorn/prefer-array-index-of': 'error',
@@ -277,7 +329,7 @@ module.exports = {
     'unicorn/prefer-number-properties': 'error',
     'unicorn/prefer-optional-catch-binding': 'error',
     'unicorn/prefer-prototype-methods': 'error',
-    'unicorn/prefer-query-selector': 'error',
+    'unicorn/prefer-query-selector': 'off',
     'unicorn/prefer-reflect-apply': 'error',
     'unicorn/prefer-string-slice': 'error',
     'unicorn/prefer-string-starts-ends-with': 'error',
