@@ -25,8 +25,15 @@ export function useInterval(fn: () => void, interval = 1000) {
     timer = requestAnimationFrame(refresh)
   }
   timer = requestAnimationFrame(refresh)
+  // 立即执行
+  fn()
   function cancelTimer() {
     cancelAnimationFrame(timer)
   }
+  // 离开后销毁
+  onUnmounted(() => {
+    cancelAnimationFrame(timer)
+  })
+  
   return cancelTimer
 }
