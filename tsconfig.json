@@ -19,8 +19,8 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "auto-imports.d.ts", "components.d.ts"],
   "exclude": ["node_modules", "dist", "**/*.js", "**/*.svg"],
   "references": [{ "path": "./tsconfig.node.json" }],
-  "extends": "@vue/tsconfig/tsconfig.web.json"
+  "extends": "@vue/tsconfig/tsconfig.dom.json"
 }
