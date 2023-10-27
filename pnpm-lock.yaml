@@ -85,6 +85,9 @@ devDependencies:
   vite:
     specifier: ^4.4.9
     version: registry.npmmirror.com/vite@4.4.9(@types/node@20.6.0)(sass@1.66.1)
+  vite-plugin-restart:
+    specifier: ^0.3.1
+    version: registry.npmmirror.com/vite-plugin-restart@0.3.1(vite@4.4.9)
   vue-tsc:
     specifier: ^1.8.10
     version: registry.npmmirror.com/vue-tsc@1.8.10(typescript@5.2.2)
@@ -4601,6 +4604,18 @@ packages:
     dependencies:
       spdx-correct: registry.npmmirror.com/spdx-correct@3.1.1
       spdx-expression-parse: registry.npmmirror.com/spdx-expression-parse@3.0.1
+    dev: true
+
+  registry.npmmirror.com/vite-plugin-restart@0.3.1(vite@4.4.9):
+    resolution: {integrity: sha512-LVe74MLUwaOzXVUgRGiphYbAYNgdGF6mP5vxj5BKcKkdmzvuuw79qcNgn9kHKKaIlCCjmOUiY3qlJ8jBSBUCoA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite-plugin-restart/-/vite-plugin-restart-0.3.1.tgz}
+    id: registry.npmmirror.com/vite-plugin-restart/0.3.1
+    name: vite-plugin-restart
+    version: 0.3.1
+    peerDependencies:
+      vite: ^2.9.0 || ^3.0.0 || ^4.0.0
+    dependencies:
+      micromatch: registry.npmmirror.com/micromatch@4.0.5
+      vite: registry.npmmirror.com/vite@4.4.9(@types/node@20.6.0)(sass@1.66.1)
     dev: true
 
   registry.npmmirror.com/vite@4.4.9(@types/node@20.6.0)(sass@1.66.1):
