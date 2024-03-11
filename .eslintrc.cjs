@@ -184,6 +184,9 @@ module.exports = {
     'no-redeclare': 'off',
     '@typescript-eslint/no-redeclare': 'error',
 
+    // import后必须换行
+    'import/newline-after-import': 'warn',
+
     // best-practice
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
