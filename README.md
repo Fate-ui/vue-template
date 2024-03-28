@@ -21,3 +21,5 @@
 ### 9.添加rollup-plugin-visualizer插件，用于分析打包后的文件大小
 
 ### 10.添加unplugin-auto-import插件、 unplugin-vue-components插件
+
+### 11.添加pinia-plugin-persistedstate缓存pinia数据
