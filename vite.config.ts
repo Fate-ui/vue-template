@@ -1,9 +1,14 @@
+/// <reference types="vitest" />
 import path from 'path'
 import { defineConfig } from 'vite'
 import { createVitePlugins } from './config/vitePlugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  test:{
+    //单元测试
+  environment: 'happy-dom'
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src')
