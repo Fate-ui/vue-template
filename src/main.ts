@@ -5,12 +5,14 @@ import { createPinia } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import App from './App.vue'
 import router from '@/router'
+import directives from './directives'
 import 'normalize.css'
 //原子化css
 import 'uno.css'
 const pinia = createPinia()
 pinia.use(piniaPluginPersistedstate)
 const app = createApp(App)
+directives(app)
 app.use(pinia)
 app.use(router)
 app.mount('#app')
