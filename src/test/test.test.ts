@@ -15,11 +15,8 @@
  *                number: 0,
  *            }
  *          })
- *        // 断言输出 
+ *        // 断言输出
  *        expect(wrapper.html()).toContain('0')
  *      })
  *    })
  */
-
-
-

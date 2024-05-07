@@ -7,17 +7,17 @@ export const constantRoutes: Array<RouteRecordRawExt> = [
   {
     path: '/',
     redirect: '/home',
-    hidden: true
+    hidden: true,
   },
   {
     path: '/home',
-    component: () => import('@/views/Home.vue')
-  }
+    component: () => import('@/views/Home.vue'),
+  },
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes: constantRoutes
+  routes: constantRoutes,
 })
 export const asyncRoutes: Array<RouteRecordRawExt> = []
 

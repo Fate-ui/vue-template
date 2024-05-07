@@ -5,18 +5,18 @@ import { createVitePlugins } from './config/vitePlugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  test:{
+  test: {
     //单元测试
-  environment: 'happy-dom'
+    environment: 'happy-dom',
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src')
+      '@': path.resolve(__dirname, 'src'),
     },
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
   },
   esbuild: {
     pure: ['console.log'], // 删除 console.log
   },
-  plugins: createVitePlugins()
+  plugins: createVitePlugins(),
 })

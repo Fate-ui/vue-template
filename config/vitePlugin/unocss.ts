@@ -8,8 +8,8 @@ export function unocssPlugin() {
         /* preset options */
       }),
       presetUno(),
-      presetIcons()
+      presetIcons(),
       // ...custom presets
-    ]
+    ],
   })
 }

@@ -18,6 +18,6 @@ export function createVitePlugins(): PluginOption[] {
     // 自动按需引入依赖
     AutoImportDeps(),
     /* 监听配置文件改动重启 */
-    ConfigRestartPlugin()
+    ConfigRestartPlugin(),
   ]
 }
