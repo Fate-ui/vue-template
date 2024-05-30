@@ -20,6 +20,8 @@ export default {
   ],
   // 自定义规则
   rules: {
+    'color-function-notation': 'off',
+    'alpha-value-notation': 'off',
     'no-empty-source': 'off',
     'import-notation': 'string', // 指定导入CSS文件的方式("string"|"url")
     'selector-class-pattern': null, // 选择器类名命名规则
