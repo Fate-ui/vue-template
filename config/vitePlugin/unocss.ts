@@ -1,5 +1,6 @@
 import Unocss from 'unocss/vite'
-import { presetAttributify, presetIcons, presetUno } from 'unocss'
+import { presetAttributify, presetIcons, presetUno, transformerVariantGroup } from 'unocss'
+import presetRemToPx from '@unocss/preset-rem-to-px'
 
 export function unocssPlugin() {
   return Unocss({
@@ -9,7 +10,8 @@ export function unocssPlugin() {
       }),
       presetUno(),
       presetIcons(),
-      // ...custom presets
+      presetRemToPx({ baseFontSize: 4 }),
     ],
+    transformers: [transformerVariantGroup()],
   })
 }

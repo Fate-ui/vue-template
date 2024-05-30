@@ -1,5 +1,6 @@
 import vue from '@vitejs/plugin-vue'
 import { visualizer } from 'rollup-plugin-visualizer'
+import VueDevTools from 'vite-plugin-vue-devtools'
 import { unocssPlugin } from './unocss'
 import { ConfigRestartPlugin } from './restart'
 import { AutoRegistryComponents } from './component'
@@ -8,6 +9,7 @@ import type { PluginOption } from 'vite'
 
 export function createVitePlugins(): PluginOption[] {
   return [
+    VueDevTools(),
     vue(),
     /*原子化CSS插件*/
     unocssPlugin(),
