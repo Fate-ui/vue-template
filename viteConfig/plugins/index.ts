@@ -7,9 +7,10 @@ import { AutoRegistryComponents } from './component'
 import { AutoImportDeps } from './autoImport'
 import type { PluginOption } from 'vite'
 
+const isWebStorm = !!process.env.WebStorm
 export function createVitePlugins(): PluginOption[] {
   return [
-    VueDevTools(),
+    VueDevTools({ launchEditor: isWebStorm ? 'webstorm' : 'code' }),
     vue(),
     /*原子化CSS插件*/
     unocssPlugin(),

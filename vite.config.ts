@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
 import path from 'path'
 import { defineConfig } from 'vite'
-import { createVitePlugins } from './config/vitePlugin'
+import { createVitePlugins } from './viteConfig/plugins'
 
 // https://vitejs.dev/config/
 export default defineConfig({

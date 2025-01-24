@@ -20,7 +20,7 @@
       "#/*": ["types/*"],
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "auto-imports.d.ts", "components.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "auto-imports.d.ts", "components.d.ts", "viteConfig/**/*.ts"],
   "exclude": ["node_modules", "dist", "**/*.js", "**/*.svg"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "extends": "@vue/tsconfig/tsconfig.dom.json"
