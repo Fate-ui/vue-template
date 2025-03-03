@@ -1,6 +1,6 @@
-import Unocss from 'unocss/vite'
-import { presetAttributify, presetIcons, presetUno, transformerVariantGroup } from 'unocss'
 import presetRemToPx from '@unocss/preset-rem-to-px'
+import { presetAttributify, presetIcons, presetUno, transformerVariantGroup } from 'unocss'
+import Unocss from 'unocss/vite'
 
 export function unocssPlugin() {
   return Unocss({

@@ -1,7 +1,7 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
-export type RouteRecordRawExt = RouteRecordRaw & { hidden?: boolean; children?: RouteRecordRawExt[] }
+export type RouteRecordRawExt = RouteRecordRaw & { hidden?: boolean, children?: RouteRecordRawExt[] }
 
 export const constantRoutes: Array<RouteRecordRawExt> = [
   {

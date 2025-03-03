@@ -5,7 +5,7 @@
 import AutoImport from 'unplugin-auto-import/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
-export const AutoImportDeps = () => {
+export function AutoImportDeps() {
   return AutoImport({
     // targets to transform
     include: [
@@ -23,7 +23,7 @@ export const AutoImportDeps = () => {
     resolvers: [
       ElementPlusResolver({
         importStyle: 'css',
-        exclude: new RegExp(/^(?!.*loading-directive).*$/),
+        exclude: /^(?!.*loading-directive).*$/,
       }),
     ],
   })

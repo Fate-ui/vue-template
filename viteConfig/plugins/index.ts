@@ -1,18 +1,18 @@
+import type { PluginOption } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { visualizer } from 'rollup-plugin-visualizer'
 import VueDevTools from 'vite-plugin-vue-devtools'
-import { unocssPlugin } from './unocss'
-import { ConfigRestartPlugin } from './restart'
-import { AutoRegistryComponents } from './component'
 import { AutoImportDeps } from './autoImport'
-import type { PluginOption } from 'vite'
+import { AutoRegistryComponents } from './component'
+import { ConfigRestartPlugin } from './restart'
+import { unocssPlugin } from './unocss'
 
 const isWebStorm = !!process.env.WebStorm
 export function createVitePlugins(): PluginOption[] {
   return [
     VueDevTools({ launchEditor: isWebStorm ? 'webstorm' : 'code' }),
     vue(),
-    /*原子化CSS插件*/
+    /* 原子化CSS插件 */
     unocssPlugin(),
     /* 打包分析 */
     visualizer(),

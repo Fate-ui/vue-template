@@ -1,27 +1,27 @@
 {
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
     "target": "ESNext",
+    "jsx": "preserve",
+    "lib": ["ESNext", "DOM"],
     "useDefineForClassFields": true,
+    "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "Node",
-    "strict": false,
-    "jsx": "preserve",
-    "sourceMap": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "lib": ["ESNext", "DOM"],
-    "skipLibCheck": true,
-    "baseUrl": ".",
-    /*允许引入js文件*/
-    "allowJs": true,
     "paths": {
       "@/*": ["src/*"],
-      "#/*": ["types/*"],
-    }
+      "#/*": ["types/*"]
+    },
+    "resolveJsonModule": true,
+    /* 允许引入js文件 */
+    "allowJs": true,
+    "strict": false,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "auto-imports.d.ts", "components.d.ts", "viteConfig/**/*.ts"],
-  "exclude": ["node_modules", "dist", "**/*.js", "**/*.svg"],
   "references": [{ "path": "./tsconfig.node.json" }],
-  "extends": "@vue/tsconfig/tsconfig.dom.json"
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "auto-imports.d.ts", "components.d.ts", "viteConfig/**/*.ts", "types/**/*.ts"],
+  "exclude": ["node_modules", "dist", "**/*.js", "**/*.svg"]
 }
