@@ -10,7 +10,6 @@ export default antfu(
       'unicorn/prevent-abbreviations': 'off',
       'unicorn/no-empty-file': 'off',
     },
-    unocss: true,
     formatters: { css: true, html: true, markdown: true },
     unicorn: { allRecommended: true },
   },
@@ -26,6 +25,10 @@ export default antfu(
         'error',
         { blankLine: 'always', prev: 'block-like', next: '*' },
       ],
+
+      'regexp/no-unused-capturing-group': 'off',
+      'unicorn/prefer-set-has': 'off',
+      'unicorn/no-array-reduce': 'off',
 
       // 允许使用 console
       'no-console': 'off',
@@ -45,6 +48,8 @@ export default antfu(
       'unicorn/prefer-number-properties': 'off',
       'unicorn/prefer-global-this': 'off',
       'unicorn/prefer-top-level-await': 'off',
+      'unicorn/explicit-length-check': 'off',
+      'unicorn/prefer-spread': 'off',
     },
   },
   {
@@ -53,6 +58,7 @@ export default antfu(
       // 允许事件名通过短横线连接
       'vue/v-on-event-hyphenation': 'off',
       'vue/attribute-hyphenation': 'off',
+      'vue/no-use-v-if-with-v-for': 'off',
       'vue/html-self-closing': ['error', {
         html: {
           void: 'always', // 对于空元素，如 <img>，始终使用自闭合形式 <img />

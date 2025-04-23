@@ -2,6 +2,7 @@
 import path from 'node:path'
 import { defineConfig } from 'vite'
 import { createVitePlugins } from './viteConfig/plugins'
+import { buildConfig } from './viteConfig/build'
 
 // https://vitejs.dev/config/
 export default defineConfig(() => {
@@ -22,5 +23,6 @@ export default defineConfig(() => {
       pure: ['console.log'], // 删除 console.log
     },
     plugins: createVitePlugins(),
+    build: buildConfig()
   }
 })
