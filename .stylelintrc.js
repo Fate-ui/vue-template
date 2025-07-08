@@ -20,9 +20,9 @@ export default {
   ],
   // 自定义规则
   rules: {
-    'color-function-notation': 'off',
-    'alpha-value-notation': 'off',
-    'no-empty-source': 'off',
+    'color-function-notation': null,
+    'alpha-value-notation': null,
+    'no-empty-source': null,
     'import-notation': 'string', // 指定导入CSS文件的方式("string"|"url")
     'selector-class-pattern': null, // 选择器类名命名规则
     'custom-property-pattern': null, // 自定义属性命名规则
