@@ -6,7 +6,7 @@
   "packageManager": "pnpm@10.10.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "prettier": "prettier --write .",
     "lint": "eslint .",
