@@ -3,29 +3,28 @@
  * @description 按需加载，自动引入
  */
 import AutoImport from 'unplugin-auto-import/vite'
-import {ElementPlusResolver} from 'unplugin-vue-components/resolvers'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
-export const AutoImportDeps = () => {
-
+export function AutoImportDeps() {
   return AutoImport({
     // targets to transform
     include: [
       /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
       /\.vue$/,
       /\.vue\?vue/, // .vue
-      /\.md$/ // .md
+      /\.md$/, // .md
     ],
     // global imports to register
     imports: [
       // presets
       'vue',
-      'vue-router'
+      'vue-router',
     ],
     resolvers: [
       ElementPlusResolver({
         importStyle: 'css',
-        exclude: new RegExp(/^(?!.*loading-directive).*$/),
-      })
-    ]
+        exclude: /^(?!.*loading-directive).*$/,
+      }),
+    ],
   })
 }
