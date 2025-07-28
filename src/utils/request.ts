@@ -1,4 +1,4 @@
-import type { AxiosResponse, InternalAxiosRequestConfig } from 'axios'
+import type { AxiosResponse, InternalAxiosRequestConfig,AxiosRequestConfig  } from 'axios'
 import axios from 'axios'
 
 /**
@@ -83,5 +83,29 @@ service.interceptors.response.use(
   },
 )
 
+const request = <ResponseType = unknown>(
+  url: string,
+  options?: AxiosRequestConfig<unknown>,
+): Promise<ResponseType> => {
+  return new Promise((resolve, reject) => {
+    service({
+      url,
+      ...options,
+    })
+      .then(res => {
+        resolve(res.data)
+      })
+      .catch(err => reject(err))
+  })
+}
+// 使用示例
+// export async function getUserInfo(id: string) {
+//   return request<NameType>('url', {
+//     params: {
+//       id,
+//     },
+//   })
+// }
+
 // 导出 axios 实例
-export default service
+export default {service,request}
