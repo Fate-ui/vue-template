@@ -6,7 +6,7 @@ import type { BuildOptions } from 'vite'
 export function buildConfig(): BuildOptions {
   return {
     target: 'chrome65',
-    //是否生成映射文件，便于上线后调试
+    // 是否生成映射文件，便于上线后调试
     sourcemap: true,
     // 关闭文件计算
     reportCompressedSize: false,
@@ -19,13 +19,15 @@ export function buildConfig(): BuildOptions {
         // 用于输出静态资源的命名，[ext]表示文件扩展名
         assetFileNames: (assetInfo: any) => {
           const info = assetInfo.name.split('.')
-          let extType = info[info.length - 1]
+          let extType = info.at(-1)
           // console.log('文件信息', assetInfo.name)
           if (/\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/i.test(assetInfo.name)) {
             extType = 'media'
-          } else if (/\.(png|jpe?g|gif|svg)(\?.*)?$/.test(assetInfo.name)) {
+          }
+          else if (/\.(png|jpe?g|gif|svg)(\?.*)?$/.test(assetInfo.name)) {
             extType = 'img'
-          } else if (/\.(woff2?|eot|ttf|otf)(\?.*)?$/i.test(assetInfo.name)) {
+          }
+          else if (/\.(woff2?|eot|ttf|otf)(\?.*)?$/i.test(assetInfo.name)) {
             extType = 'fonts'
           }
 
@@ -33,9 +35,9 @@ export function buildConfig(): BuildOptions {
         },
         manualChunks: {
           vue: ['vue', 'vue-router'],
-          'element-plus': ['element-plus']
-        }
-      }
-    }
+          // 'element-plus': ['element-plus']
+        },
+      },
+    },
   }
 }

@@ -16,6 +16,7 @@ coverage
 *.local
 auto-imports.d.ts
 components.d.ts
+stats.html
 
 # Editor directories and files
 .vscode/*
